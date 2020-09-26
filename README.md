@@ -1,16 +1,24 @@
 Bookmarks
 
+
 Bookmarks is an app that allows you to create, store, rate, and visit links to your favorite bookmarks.
 
 Nate Voisan's Bookmarks app for Thinkful
 
+
+
 Requirements
+
 
 Fulfill every user story
 
 Fulfill every technical requirement
 
+
+
 User Stories
+
+
 As a user:
 I can add bookmarks to my bookmark list
 Each bookmark includes a title, url link, description, and rating(1-5)
@@ -21,7 +29,10 @@ I should receive an error message when a form is not filled out correctly
 I can filter the bookmarks with an option select that shows bookmarks with ratings at or above the selected option
 ALL DATA STORED IS WIPED EVERY 24 HOURS
 
+
+
 Technical Requirements
+
 
 Use fetch for Ajax calls and jQuery for DOM manipulation
 Use namespacing to adhere to good architecture practices
@@ -33,7 +44,11 @@ Use semantic HTML
 Use responsive and mobile first design
 Follow a11y best practices
 
+
+
 Project Submission
+
+
 Push your final version to the gh-pages branch of your repo
 Add the live GH Pages link to the header of your repo
 Create a README.md file that contains a full list of all user stories completed
