@@ -10,9 +10,9 @@ Nate Voisan's Bookmarks app for Thinkful
 Requirements
 
 
-Fulfill every user story
+Fulfill every non-extension user story
 
-Fulfill every technical requirement
+Fulfill every non-extension technical requirement
 
 
 
