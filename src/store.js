@@ -11,6 +11,9 @@ const addBookmark = function(bookmark) {
     }
     bookmarks.push(bookmark);
     this.adding = false;
+    if (this.filter > 0) {
+        this.filterBookmarks(this.filter);
+    }
 }
 
 const setAdding = function(param) {
@@ -31,7 +34,8 @@ const deleteBookmark = function(id) {
 }
 
 const filterBookmarks = function(filterNumber) {
-    this.filter = true;
+    this.filter = filterNumber;
+    this.filteredBookmarks = [];
     this.bookmarks.forEach(bookmark => {
         if (bookmark.rating >= filterNumber) {
             this.filteredBookmarks.push(bookmark)

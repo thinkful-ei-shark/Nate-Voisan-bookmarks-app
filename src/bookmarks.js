@@ -19,7 +19,6 @@ const render = function() {
         const filteredBookmarkHTML = generateBookmarkListHTML(filteredBookmarksArray);
         $('.js-bookmarks-container').html(filteredBookmarkHTML);
         renderError();
-        STORE.filteredBookmarks = [];
         bindEventListeners();
     } else {
         const bookmarkHTML = generateBookmarkListHTML(STORE.bookmarks);
@@ -172,6 +171,7 @@ const handleBookmarkAdd = function(e) {
         if (!STORE.adding) {
             STORE.adding = true;
         }
+
     render();
 }
 
@@ -199,7 +199,6 @@ const handleBookmarkSubmit = function(event) {
             STORE.setError(error.message);
             renderError();
         })
-        render();
 }
 
 
